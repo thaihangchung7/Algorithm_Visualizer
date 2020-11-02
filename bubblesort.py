@@ -1,13 +1,21 @@
-#Bubblesorting: swaping adjacent elements
-#that are in the wrong order. We keep interating
-#through swaps until there are no swaps left.
-
+"""
+Bubblesorting: swaping adjacent elements
+that are in the wrong order. We keep interating
+through swaps until there are no swaps left.
+"""
 import random
 import time
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 
-testarray = [4,5,6,336,4,5,2,34,554,6,2,46]
+try:
+    testarray = []
+    print("Type in a array, press any key other than a number to submit array")
+    while True:
+        testarray.append(int(input()))
+except:
+    print("You entered: ",testarray)
+
 #defining swap function
 def swap(A, i, j):
     if i != j:
@@ -30,4 +38,4 @@ def bubblesort(A):
                 swapped = True
     return A
 
-print(bubblesort(testarray))
+print("Bubble sorted array: ", bubblesort(testarray))
