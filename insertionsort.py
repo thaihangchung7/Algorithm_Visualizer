@@ -1,7 +1,14 @@
-def insertionsort(testarray):
-    for i in range(1,len(testarray)):
-        if testarray[i-1] > testarray[i]:
-            testarray.insert(0,testarray[i])
-        
-        elif testarray[i-1] <= testarray[i]:
-            pass
+def insertionsort(A):
+ 
+    for i in range(1,len(A)):
+        key = A[i]
+        j = i-1
+        while j >= 0 and A[j] > key:
+            A[j+1] = A[j]
+            j = j-1
+        A[j+1] = key
+
+
+    return A
+
+
