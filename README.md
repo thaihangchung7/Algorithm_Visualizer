@@ -2,4 +2,5 @@
 
 bubble sort
 merge sort
-insertion sort (in progress)
+insertion sort
+selection sort (in progress)
