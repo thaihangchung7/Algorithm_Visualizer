@@ -9,7 +9,7 @@ import random
 import time
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation
-
+"""
 try:
     testarray = []
     print("Type in a array, press any key other than a number to submit array")
@@ -17,7 +17,7 @@ try:
         testarray.append(int(input()))
 except:
     print("You entered: ",testarray)
-
+"""
 
 def merge(array_a, array_b):
     array_c = []
@@ -62,5 +62,5 @@ def mergesort(array):
 
 
 
-print("Merge sorted array: ", mergesort(testarray))
+#print("Merge sorted array: ", mergesort(testarray))
 

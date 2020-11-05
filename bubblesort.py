@@ -8,19 +8,13 @@ import time
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 
-try:
-    testarray = []
-    print("Type in a array, press any key other than a number to submit array")
-    while True:
-        testarray.append(int(input()))
-except:
-    print("You entered: ",testarray)
-
 #defining swap function
 def swap(A, i, j):
     if i != j:
         A[i], A[j] = A[j], A[i]
 
+
+#actually bubblesorting
 def bubblesort(A):
 
     if len(A)==1:
@@ -38,4 +32,3 @@ def bubblesort(A):
                 swapped = True
     return A
 
-print("Bubble sorted array: ", bubblesort(testarray))
